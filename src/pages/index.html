@@ -1,17 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="pl">
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WTF: Webpack starter kit</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-  </head>
-  <body>
-    <div class="hello">
-      <img class="hello__logo" src="../assets/img/logo.svg" alt="WTF " />
-      <span class="hello__circles"></span>
-    </div>
-  </body>
+    <title>Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montaga&family=Titillium+Web:wght@200;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <nav class="menu menu--js">
+            <a class="menu__page menu__page--homepage" href="/html/index.html">Strona główna</a>
+            <a class="menu__page" href="/html/css.html">CSS</a>
+            <a class="menu__page" href="/html/java-script.html">Java Script</a>
+            <a class="menu__page" href="/html/my-projects.html">Moje projekty</a>
+        </nav>
+        <button class="hamburger hamburger--js">Menu</button>
+    </header>
+    <main class="main">
+
+        <h1 class="title">#ABOUT</h1>
+
+        <section class="introduction">
+            <img class="introduction__photo" src="/img/Marta.jpg" alt="Zdjęcie profilowe" />
+            <p class="introduction__description">
+                Cześć! Mam na imię Marta. Pochodzę z malowniczego Śląska Cieszyńskiego
+                u podnóża Beskidów, a aktualnie mieszkam w Gliwicach. Niedawno
+                zaczęłam moją przygodę z frontendem. Zapraszam do zapoznania się z
+                moją stroną, na której publikuję moje postępy w nauce i trochę
+                <a href="#articles">prywaty</a> :)
+            </p>
+        </section>
+        <section id="articles" class="articles">
+            <article class="article">
+                <h2 class="article__heading">Kilka słów o mnie</h2>
+                <p class="article__description">
+                    Z natury jestem spokojna, ale w gronie najbliższych potrafię pokazać
+                    charakterek. Z dystansem patrzę na siebie i świat. Z reguły mało
+                    mówię, choć w głowie jedna myśl goni drugą &#128526;. Lubię
+                    rozwiązania praktyczne z nutą kreatywności. Jestem fanką minimalizmu
+                    - moim zdaniem piękno tkwi w prostocie.
+                </p>
+            </article>
+            <article class="article">
+                <h2 class="article__heading">Co mnie kręci</h2>
+                <p class="article__description">
+                    Moją wielką miłością (zaraz po Mężu oczywiście) są góry. Najczęściej
+                    można mnie spotkać na szlakach w rodzinnym Beskidzie Śląskim. Na
+                    swoim koncie mam wyjścia w śniegu po pas, w upale, podczas burzy, na
+                    wschód słońca i... w maseczce <span class="italics">(#koronawirus) </span>. Oprócz tego uwielbiam
+                    gotować.
+                </p>
+            </article>
+            <article class="article">
+                <h2 class="article__heading">Pierwsze kroki we frontendzie</h2>
+                <p class="article__description">
+                    Do kursu WTF startuję z podstawami HTML'a, CSS'a i JavaScript.
+                    Przerobiłam już kurs "Web developer w 15 dni" i równolegle kończę
+                    "Programowanie w JavaScript" od Samuraja Programowania
+                    <a class="article__link" href="https://websamuraj.pl/">WebSamuraj</a>.
+                </p>
+            </article>
+        </section>
+        <footer class="main-footer">Marta Lang &copy; 2020</footer>
+    </main>
+    <script src="/main.js"></script>
+</body>
+
 </html>

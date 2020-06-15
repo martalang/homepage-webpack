@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekty</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style-my-projects.css">
+
+</head>
+
+<body>
+    <main class="main">
+        <nav class="menu">
+            <a class="menu__page menu__page--homepage" href="/html/index.html">Strona główna</a>
+            <a class="menu__page" href="/html/css.html">CSS</a>
+            <a class="menu__page" href="/html/java-script.html">Java Script</a>
+            <a class="menu__page" href="/html/my-projects.html">Moje projekty</a>
+        </nav>
+
+        <img src="/img/gorkiwielkie.jpg" alt="Panorama z ul.Widokowej">
+        <div class="grid">
+            <article class="project">
+                <h2 class="project__name">Kamień, papier, nożyce</h2>
+                <p class="project__description">Dzisiaj napisałam grę w kamień, papier i nożyce, do zabawy z
+                    komputerem.
+                    Na
+                    stronie głównej mojej gry
+                    zamieściłam udostępnione przez Samuraja grafiki ilustrujące wybór gracza. Po zaznaczeniu jednej
+                    z
+                    nich i
+                    kliknięciu przycisku "Start" następuje wywołanie metody <span
+                        class="italics">computerChoice()</span>,
+                    losującej element z 3-el.
+                    tablicy. Wybory gracza i komputera są w każdej grze przekazywane do obiektu game. Metoda <span
+                        class="italics">getResult()</span>
+                    wyłania zwycięzcę gry na podstawie odpowiednich warunków oraz aktualizuje licznik
+                    zwycięstw/porażek
+                    i
+                    remisów. Metoda <span class="italics">viewResults() </span> odpowiada
+                    za wyświetlenie aktualnej statystyki w odpowiednich polach w widoku. </p>
+            </article>
+            <article class="project">
+                <h2 class="project__name">Projekt bannera ze zmieniającymi się grafikami</h2>
+                <p class="project__desc">
+                    W projekcie należało zapewnić dwie podstawowe funkcjonalności mojego bannera:
+                    <ul class="list">
+                        <li>automatyczne przełączanie tła wraz z podświetlaniem odpowiadającej mu kropki</li>
+                        <li>możliwość manualnej nawigacji między kropkami i tłami za pomocą strzałek (lewo-prawo).
+                        </li>
+                    </ul>
+                    Projek wymusił na mnie kilka podejść i sporo główkowania. Największym problemem było zapewnienie
+                    bezkolizyjnego współdziałania tych dwóch funkcjonalności i płynnego przejścia między nimi.
+                    Kluczowe
+                    okazało się manewrowanie interwałem czasowym wywoływania funkcji automatycznej zmiany tła.
+                    Napotkałam też problemy przy ograniczaniu obszaru zmiany grafik do konkretnej liczby elementów
+                    (tutaj
+                    3).
+                </p>
+            </article>
+            <article class="project">
+                <h2 class="project__name">Odliczanie czasu do rocznicy ślubu</h2>
+                <p class="project__description">Najpierw utworzyłam nowy obiekt przechowujący datę rocznicy ślubu:
+                    <span class="italics">let
+                        futureDate = new Date(2020, 5,
+                        29,
+                        15, 0, 0);</span> (drugi parametr odpowiada za indeks miesiąca, a indeksowanie jest od zera,
+                    czyli czerwiec
+                    ma
+                    wartość 5). Następnie utworzyłam funkcję <span class="italics">countDown()</span>, która co
+                    sekundę
+                    nadpisuje zmienną actualDate
+                    aktualną datą (i czasem), a następnie wyznacza różnicę między tymi datami: <span class="italics">let
+                        timeDiff = new
+                        Date(futureDate - actualDate);</span> Następnie z obiektu timeDiff pobieram i w odpowidnich
+                    polach na
+                    stronie
+                    wyświetlam liczbę miesięcy, dni, godzin, minut i sekund. Za pobieranie tych wartości odpowiadają
+                    metody
+                    <span class="italics">Date().getMonth(), Date().getDay()...</span> </p>
+            </article>
+            <article class="project">
+                <h2 class="project__name">Stoper</h2>
+                <p class="project__description">W projekcie stopera tworzenie obiektu Date do odliczania czasu nie
+                    jest
+                    konieczne. Moja metoda
+                    <span class="italics">runStopwatch()</span> co 10ms inkrementuje i wyświetla licznik "tików
+                    zegara".
+                    Po wystartowaniu stopera
+                    możliwe
+                    jest zapauzowanie go tym samym przyciskiem oraz ponowne uruchomienie. Każdy kolejny rozpoczęty
+                    etap
+                    odliczania jest sumowany z poprzednimi. Kliknięcie przycisku "Reset" powoduje wyzerowanie
+                    licznika.
+                </p>
+            </article>
+        </div>
+    </main>
+</body>
+
+</html>
