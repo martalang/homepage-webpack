@@ -12,8 +12,7 @@ module.exports = {
     path: __dirname + "/dist",
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: [/.js$/],
         exclude: /(node_modules)/,
         use: {
@@ -29,14 +28,12 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "img/[name].[hash:8].[ext]",
-            },
+        use: [{
+          loader: "file-loader",
+          options: {
+            name: "img/[name].[hash:8].[ext]",
           },
-        ],
+        }, ],
       },
     ],
   },
@@ -47,7 +44,9 @@ module.exports = {
 
   plugins: [
     new CopyWebpackPlugin({
-      patterns: [{ from: "public" }],
+      patterns: [{
+        from: "public"
+      }],
     }),
 
     /* here you can define another html file and its dependencies */
@@ -58,10 +57,29 @@ module.exports = {
       filename: "index.html",
     }),
     new HtmlWebpackPlugin({
-      template: "./src/pages/another.html",
+      template: "./src/pages/html.html",
       inject: true,
-      chunks: ["index", "another"],
-      filename: "another.html",
+      chunks: ["index"],
+      filename: "html.html",
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/css.html",
+      inject: true,
+      chunks: ["index"],
+      filename: "css.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/skills-and-tools.html",
+      inject: true,
+      chunks: ["index"],
+      filename: "skills-and-tools.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/my-projects.html",
+      inject: true,
+      chunks: ["index"],
+      filename: "my-projects.html",
+    }),
+
   ],
 };
