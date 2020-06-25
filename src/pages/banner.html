@@ -9,14 +9,14 @@
             margin: 0;
         }
 
-        header {
+        .slider {
             width: 100%;
             height: 100vh;
             position: relative;
             overflow: hidden;
         }
 
-        img {
+        .slider__picture {
             position: absolute;
             min-width: 100%;
             min-height: 100%;
@@ -27,7 +27,7 @@
             opacity: 0.6;
         }
 
-        h1 {
+        .slider__text {
             position: absolute;
             top: 50%;
             left: 50%;
@@ -37,14 +37,14 @@
             text-shadow: 0 0 6px white;
         }
 
-        .dots {
+        .slider__dots {
             position: absolute;
             bottom: 30px;
             left: 50%;
             transform: translateX(-50%)
         }
 
-        .dots span {
+        .slider__dots--dot {
             display: inline-block;
             background-color: #000;
             margin: 0 20px;
@@ -54,21 +54,20 @@
             box-shadow: 0 0 0 5px white;
         }
 
-        .dots span.active {
+        .slider__dots .active {
             box-shadow: 0 0 0 5px white, 0 0 3px 10px red;
         }
     </style>
 </head>
 
 <body>
-    <header>
-        <img class="slider" src="../assets/img/banner1.jpg" alt="">
-        <h1 class="slider">Pierwszy tekst</h1>
-        <div class="dots">
-            <span id="one" class="active"></span>
-            </span>
-            <span id="two"></span>
-            <span id="three"></span>
+    <header class="slider">
+        <img class="slider__picture" src="../assets/img/banner1.jpg" alt="">
+        <h1 class="slider__text">Pierwszy tekst</h1>
+        <div class="slider__dots">
+            <span class="slider__dots--dot active" id="one"></span>
+            <span class="slider__dots--dot" id="two"></span>
+            <span class="slider__dots--dot" id="three"></span>
         </div>
     </header>
 </body>

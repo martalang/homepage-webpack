@@ -1,22 +1,22 @@
-const h1 = document.querySelector('h1');
-const img = document.querySelector('img');
-const dots = [...document.querySelectorAll('span')];
-const tekst = ["Pierwszy tekst", "Drugi tekst", "Trzeci tekst"];
+const sliderHeader = document.querySelector('.slider__text');
+const sliderPicture = document.querySelector('.slider__picture');
+const sliderDots = [...document.querySelectorAll('.slider__dots--dot')];
+const sliderText = ["Pierwszy tekst", "Drugi tekst", "Trzeci tekst"];
 let i = 0;
 
 function changeDot() {
-    const activeDot = dots.findIndex(dot => dot.classList.contains('active'));
-    dots[activeDot].classList.remove('active');
-    dots[i].classList.add('active');
+    const activeDot = sliderDots.findIndex(dot => dot.classList.contains('active'));
+    sliderDots[activeDot].classList.remove('active');
+    sliderDots[i].classList.add('active');
 }
 
 function switchBackground() {
     i++;
-    if (i === dots.length) {
+    if (i === sliderDots.length) {
         i = 0;
     }
-    img.src = `./src/assets/img/banner${i+1}.jpg`;
-    h1.textContent = tekst[i];
+    sliderPicture.src = `../src/assets/img/banner${i+1}.jpg`;
+    sliderHeader.textContent = sliderText[i];
     changeDot();
 }
 
@@ -27,13 +27,13 @@ function keyChangeDot(e) {
         clearInterval(intervalID);
         e.code === "ArrowLeft" ? i-- : i++;
         if (i < 0) {
-            i = dots.length - 1;
-        } else if (i >= dots.length) {
+            i = sliderDots.length - 1;
+        } else if (i >= sliderDots.length) {
             i = 0;
         }
 
-        img.src = `./src/assets/img/banner${i+1}.jpg`;
-        h1.textContent = tekst[i];
+        sliderPicture.src = `../src/assets/img/banner${i+1}.jpg`;
+        sliderHeader.textContent = sliderText[i];
         changeDot();
         intervalID = setInterval(switchBackground, 2500);
     }

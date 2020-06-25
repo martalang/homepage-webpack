@@ -2,6 +2,7 @@ import "../scss/main.scss";
 import moment from "moment";
 import "./game.js";
 import "./banner.js";
+
 /* place your code below */
 
 const btnHamburger = document.querySelector(".hamburger--js");
