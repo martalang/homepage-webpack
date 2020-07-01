@@ -1,6 +1,6 @@
 import "../scss/main.scss";
 import moment from "moment";
-import "./game.js";
+// import "./game.js";
 import "./banner.js";
 
 /* place your code below */

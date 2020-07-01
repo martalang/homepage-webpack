@@ -31,35 +31,82 @@
             </p>
         </section>
         <section id="articles" class="articles">
-            <article class="article">
-                <h2 class="article__heading">Kilka słów o mnie</h2>
-                <p class="article__description">
-                    Z natury jestem spokojna, ale w gronie najbliższych potrafię pokazać
-                    charakterek. Z dystansem patrzę na siebie i świat. Z reguły mało
-                    mówię, choć w głowie jedna myśl goni drugą &#128526;. Lubię
-                    rozwiązania praktyczne z nutą kreatywności. Jestem fanką minimalizmu
-                    - moim zdaniem piękno tkwi w prostocie.
-                </p>
+            <article class="article clearfix">
+                <div class="article__content">
+                    <h2 class="article__content--heading">O mnie</h2>
+                    <p class="article__content--description">
+                        Z natury jestem spokojna, ale w gronie najbliższych potrafię pokazać
+                        charakterek. Z dystansem patrzę na siebie i świat. Z reguły mało
+                        mówię, choć w głowie jedna myśl goni drugą &#128526;. Lubię
+                        rozwiązania praktyczne z nutą kreatywności. Jestem fanką minimalizmu
+                        - moim zdaniem piękno tkwi w prostocie.
+                    </p>
+                </div>
             </article>
-            <article class="article">
-                <h2 class="article__heading">Co mnie kręci</h2>
-                <p class="article__description">
-                    Moją wielką miłością (zaraz po Mężu oczywiście) są góry. Najczęściej
-                    można mnie spotkać na szlakach w rodzinnym Beskidzie Śląskim. Na
-                    swoim koncie mam wyjścia w śniegu po pas, w upale, podczas burzy, na
-                    wschód słońca i... w maseczce <span class="italics">(#koronawirus) </span>. Oprócz tego uwielbiam
-                    gotować.
-                </p>
+            <article class="article clearfix">
+                <div class="article__content">
+                    <h2 class="article__content--heading">Moje hobby</h2>
+                    <p class="article__content--description">
+                        Moją wielką miłością (zaraz po Mężu oczywiście) są góry. Najczęściej
+                        można mnie spotkać na szlakach w rodzinnym Beskidzie Śląskim. Na
+                        swoim koncie mam wyjścia w śniegu po pas, w upale, podczas burzy, na
+                        wschód słońca i... w maseczce <span class="italics">(#koronawirus) </span>. Oprócz tego
+                        uwielbiam
+                        gotować.
+                    </p>
+                </div>
             </article>
-            <article class="article">
-                <h2 class="article__heading">Pierwsze kroki we frontendzie</h2>
-                <p class="article__description">
-                    Do kursu WTF startuję z podstawami HTML'a, CSS'a i JavaScript.
-                    Przerobiłam już kurs "Web developer w 15 dni" i równolegle kończę
-                    "Programowanie w JavaScript" od Samuraja Programowania
-                    <a class="article__link" href="https://websamuraj.pl/">WebSamuraj</a>.
-                </p>
+            <article class="article clearfix">
+                <div class="article__content">
+                    <h2 class="article__content--heading">Pierwsze kroki we frontendzie</h2>
+                    <p class="article__content--description">
+                        Do kursu WTF startuję z podstawami HTML'a, CSS'a i JavaScript.
+                        Przerobiłam już kurs "Web developer w 15 dni" i równolegle kończę
+                        "Programowanie w JavaScript" od Samuraja Programowania
+                        <a class="article__link" href="https://websamuraj.pl/">WebSamuraj</a>.
+                    </p>
+                </div>
             </article>
+        </section>
+        <section class="hobby clearfix">
+            <h2>Moje zainteresowania</h2>
+            <div class="hobby__item">
+                <p>Kosmetyki naturalne</p>
+            </div>
+            <div class="hobby__item">
+                <p>Turystyka górska</p>
+            </div>
+            <div class="hobby__item">
+                <p>Minimalizm</p>
+            </div>
+            <div class="hobby__item">
+                <p>Gotowanie</p>
+            </div>
+        </section>
+        <section class="contact">
+            <h3>Skontaktuj się ze mną</h3>
+
+            <form method="POST" class="form wrap clearfix" action="email.php">
+
+                <input name="firstName" id="idFirstName" type="text" placeholder="Imię">
+
+                <input name="email" id="id-email" type="email" required placeholder="E-mail">
+
+                <textarea name="message" id="id-message" required placeholder="Treść wiadomości"></textarea>
+
+                <input name="submitt" id="id-submitt" type="submit" value="Wyślij"></input>
+
+            </form>
+
+            <div class="social-media">
+                <div class="social-media"><img src="../assets/img/github.png" alt="github">
+                    <a href="https://github.com/martalang">martalang</a></div>
+                <div class="social-media"><img src="../assets/img/facebook.png" alt="facebook">
+                    <a href="https://www.facebook.com/marta.wadas.5">marta.wadas.5</a></div>
+                <div class="social-media"><img src="../assets/img/email.png" alt="E-mail">
+                    <a href="mailto:marta.wadas@gmail.com">marta.wadas@gmail.com</a>
+                </div>
+            </div>
         </section>
         <button id="dark-mode-button">Zmień tryb na ciemny</button>
         <footer class="main-footer">Marta Lang &copy; 2020</footer>

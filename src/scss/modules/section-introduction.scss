@@ -1,0 +1,28 @@
+.introduction {
+    min-height: 30em;
+    position: relative;
+    background-image: url(../assets/img/motto.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+
+
+    &__photo {
+        width: 30%;
+        float: left;
+        margin: 0 10px;
+        border-radius: 50%;
+    }
+
+    &__description {
+        font-size: 18px;
+        text-align: justify;
+        color: white;
+
+        & a {
+            color: rgb(201, 247, 250);
+            text-decoration: none;
+            letter-spacing: 3px;
+        }
+    }
+}
