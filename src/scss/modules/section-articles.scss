@@ -1,10 +1,11 @@
 .articles {
-    height: 100vh;
+
     padding: 20px 0;
 }
 
 .article {
     display: grid;
+    height: 33vh;
     margin: 20px;
     // grid-template-columns: ;
     // background-image: url(../assets/img/banner3.jpg);
@@ -26,7 +27,7 @@
     }
 
     &__content {
-        &--heading {}
+        // &--heading {}
 
         &--description {
             padding: 0 40px;

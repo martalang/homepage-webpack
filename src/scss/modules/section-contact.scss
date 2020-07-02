@@ -1,10 +1,13 @@
 .contact {
-    display: grid;
+    // display: grid;
+    margin: 10px auto;
+
 }
 
 .form>* {
     width: 70%;
     margin-bottom: 25px;
+
     // font-family: 'saira', sans-serif;
     font-size: 12px;
     padding: 5px;
@@ -35,11 +38,11 @@
     // font-family: saira condensed, sans-serif;
 
     & img {
-        height: 5em;
+        height: 3em;
         float: left;
     }
 
     & a {
-        padding-left: 10px;
+        padding: 10px;
     }
 }
