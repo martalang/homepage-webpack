@@ -1,18 +1,6 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+# WELCOME NOTE
 
-# WTF Webpack Starter Kit 
+Welcome to my website! Here I present some information about me and my first steps to becoming a front-end developer. 
+My homepage is still being developed, as I learn more and more. 
 
-Simple toolkit for your static websites development.
-
-## How to use it?
-
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
-
-## Available scripts
-
-`npm run start` - runs development mode
-
-`npm run build` - runs build process for production
-
-`npm run publish` - runs build process and publish the page using `gh-pages` branch
-
+This project is based on the `Webpack Starter KIT` (released by Maciej Korsan) to manage all the files properly.
