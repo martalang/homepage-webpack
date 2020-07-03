@@ -5,7 +5,7 @@
 @import "./modules/section-articles.scss";
 @import "./modules/section-introduction.scss";
 @import "./modules/section-contact.scss";
-@import "./modules/css-projects.scss";
+@import "./modules/css-html-projects.scss";
 
 :root {
   --darkmode-background-color: rgb(34, 33, 33);
@@ -71,4 +71,8 @@ footer {
 
 .project {
   width: 100vw;
+}
+
+.html-page--heading {
+  margin-top: 200px;
 }

@@ -25,10 +25,16 @@
 
         &:nth-of-type(3) {
             grid-row-end: span 3;
+            background-image: url(../assets/img/makeup2.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position-x: center;
+            background-color: rgb(146, 175, 219);
+            ;
         }
 
         &:nth-of-type(4) {
-            grid-column-start: -2
+            grid-column-start: -2;
         }
 
         &:nth-of-type(5) {
@@ -39,4 +45,10 @@
             grid-area: -1/-1/-2/-2;
         }
     }
+}
+
+.timer {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
 }
